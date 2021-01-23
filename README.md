@@ -4,6 +4,7 @@ Collection of some commands, shortcuts, and files I use in Linux, windows, and g
 ### Languages & tools :
 [<img align="left" alt="Git" width="26px" src="https://github.com/AbhilashTUofficial/AbhilashTuofficial/blob/main/logos/tools/git.png">][github]
 [<img align="left" alt="Terminal" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/terminal/terminal.png">][github]
+[<img align="left" alt="Shell" width="26px" src="https://github.com/AbhilashTUofficial/AbhilashTuofficial/blob/main/logos/tools/shell.png">][shell]
 <br/><br/>
 ### Connect with me :  
 <a href="https://github.com/AbhilashTUofficial" target="_blank">
@@ -62,4 +63,5 @@ Collection of some commands, shortcuts, and files I use in Linux, windows, and g
 [java]: https://github.com/AbhilashTUofficial/java-programming
 [android]: https://github.com/AbhilashTUofficial/CloneApps
 [behance]: https://www.behance.net/abhilashstorm
+[shell]: https://github.com/AbhilashTUofficial/Shell-scripting
 
