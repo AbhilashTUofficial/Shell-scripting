@@ -1,5 +1,6 @@
-# Right Away Repo
-Collection of some commands, shortcuts, and files I use in Linux, windows, and git.
+# Shell scripting
+All most half of my computer interaction is with the terminal. 
+Learn to use the terminal was the best present I gave to myself, this repository is about shell scripting and Linux commands, and more.
 <br/>
 ### Languages & tools :
 [<img align="left" alt="Git" width="26px" src="https://github.com/AbhilashTUofficial/AbhilashTuofficial/blob/main/logos/tools/git.png">][github]
