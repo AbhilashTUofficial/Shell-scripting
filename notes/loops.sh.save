@@ -1,0 +1,14 @@
+# Loops in shell
+echo "For loop"
+for var in 1 2 3
+do
+echo $var
+done
+
+
+i=0
+while [ $i -lt 3 ]
+do
+	echo " $i"
+i= 'expr $i+1'
+done
