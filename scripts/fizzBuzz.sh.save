@@ -1,0 +1,14 @@
+startNum=("$1")
+endNum=("$2")
+pivot=$startNum
+#body
+until [[ $pivot = $endNum ]]
+do
+	if [[ $((pivot % 3)) -eq 0 ]]
+	then
+	
+	echo "fizzBuzz"
+	fi
+	echo "$pivot"
+	pivot=$((pivot+1))
+done
