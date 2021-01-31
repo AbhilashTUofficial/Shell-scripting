@@ -7,6 +7,8 @@ Learn to use the terminal was the best present I gave to myself, this repository
 [<img align="left" alt="Terminal" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/terminal/terminal.png">][github]
 [<img align="left" alt="Shell" width="26px" src="https://github.com/AbhilashTUofficial/AbhilashTuofficial/blob/main/logos/tools/shell.png">][shell]
 <br/><br/>
+![GitHub last commit](https://img.shields.io/github/last-commit/AbhilashTUofficial/Shell-scripting?color=green&label=Last%20Commit%3A&style=for-the-badge)
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/AbhilashTUofficial/Shell-scripting?color=green&label=Repo%20Size%3A&style=for-the-badge)
 ### Connect with me :  
 <a href="https://github.com/AbhilashTUofficial" target="_blank">
 <img src=https://img.shields.io/badge/github-%2324292e.svg?&style=for-the-badge&logo=github&logoColor=white alt=github style="margin-bottom: 5px;" />
