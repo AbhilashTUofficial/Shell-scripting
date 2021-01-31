@@ -34,6 +34,13 @@ echo "<   : less than"
 echo ">   : greater than"
 echo "-z  : string is not null"
 echo --------------------------------
+echo Logical operators
+echo --------------------------------
+# && used in between two different conditions
+# or in [[]]
+# -a used on the same condition
+echo "AND operator : &&, -a"
+echo "OR  operator : ||, -o"
 read -p "Enter the first number: " numbA
 read -p "Enter the second number: " numbB
 if [ $numbA -lt $numbB ]

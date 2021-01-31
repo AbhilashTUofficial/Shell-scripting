@@ -4,14 +4,12 @@ pivot=$startNum
 #body
 until [[ $pivot = $endNum ]]
 do
-	if [[ $((pivot % 3)) -eq 0 ]]
+	if [[ $((pivot % 3)) -eq 0 && $((pivot % 5)) -eq 0 ]]
 	then
-		if [[ $((pivot % 5)) -eq 0 ]]
-		then
-			echo "FizzBuzz"
-		else
-			echo "Fizz"
-		fi
+		echo "FizzBuzz"
+	elif [[ $((pivot % 3)) -eq 0 ]]
+	then
+		echo "Fizz"
 	elif [[ $((pivot % 5)) -eq 0 ]]
 	then
 		echo "Buzz"
