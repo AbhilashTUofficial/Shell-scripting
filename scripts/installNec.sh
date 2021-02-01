@@ -7,7 +7,8 @@ apt install x11-apps
 apt install oneko
 apt install libaa-bin
 apt install bb
-
+sleep 1
+clear
 echo "Update        : Done "
 echo "Upgrade       : Done "
 echo "Cmatrix       : Done "

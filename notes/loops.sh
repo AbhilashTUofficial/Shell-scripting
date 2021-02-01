@@ -2,7 +2,8 @@
 #######################
 echo "For loop"
 echo
-for i in 1 2 3 
+#for  (( i=0; i<4; i++ ))
+for i in 1 2 3 #{Start..End..Increment}
 do
 	echo $i
 done
@@ -54,6 +55,7 @@ echo "let \"++var\""
 ########################
 echo
 echo "break statements"
+echo "continue statements"
 echo
 a=0
 while [ $a -lt 10 ]
@@ -79,4 +81,12 @@ do
 		continue
 	fi
 	echo "Odd"
+done
+########################
+
+echo "Select loop"
+echo
+select num in 897 435 345 354
+do
+	echo "$num is selected"
 done

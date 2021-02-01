@@ -8,6 +8,7 @@ read firstName lastName
 age=0
 read -p "Enter your age:" age
 read -sp "Enter your password:" password
+sleep 1
 echo
 echo ----------------------------
 echo Your first name: $firstName

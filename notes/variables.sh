@@ -5,6 +5,10 @@ echo Special variables
 echo -------------------------------------------------------
 
 # All special variables starts with an "#" Hash symbol.
+echo "Use local keyword to make a variable local"
+#local varName
+echo "Use readonly keyword to make a variable constant"
+#readonly varName
 echo file name: $0
 echo file parameters: $1 $2 "(1-9)"
 echo number of arguments: $#

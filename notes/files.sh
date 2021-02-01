@@ -11,7 +11,8 @@ echo "-s return true if the file is not-empty"
 echo "-r return true if the file has read permission"
 echo "-w return true if the file has write permission"
 echo "-x return true if the file has execute permission"
-
+echo "sleep time to await the system"
+echo "terminalName to open new terminal"
 echo
 echo----------------------------
 echo "File check"
@@ -23,3 +24,11 @@ echo "$fileName exist"
 else
 echo "$fileName is not exist"
 fi
+while read line
+do
+	echo $line
+done <files.sh
+while IFS=' 'read -r line
+do
+	echo $line
+done < file #or file path
