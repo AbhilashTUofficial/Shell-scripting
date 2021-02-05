@@ -1,0 +1,618 @@
+Lab Exercises
+
+Lab Exercises for UNIX Administration
+Lab 1
+1.
+
+Obtain the following results
+(i) To print the name of operating system
+(ii) To print the login name
+(iii) To print the host name
+
+2.
+
+Find out the users who are currently logged in and find the particular user too.
+
+3.
+
+Display the calendar for
+(i)
+(ii)
+(iii)
+(iv)
+(v)
+
+Jan 2000
+Feb 1999
+9th month of the year 7 A.D
+For the current month
+Current Date Day Abbreviation , Month Abbreviation along with year
+
+4.
+
+Display the time in 12-Hour and 24 Hour Notations.
+
+5.
+
+Display the Current Date and Current Time.
+
+6.
+
+Display the message “GOOD MORNING” in enlarged characters.
+
+7.
+
+Display the name of your home directory.
+
+8.
+
+Create a directory SAMPLE under your home directory.
+
+9.
+
+Create a sub-directory by name TRIAL under SAMPLE.
+
+10. Change to SAMPLE.
+11. Change to your home directory.
+12. Change from home directory to TRIAL by using absolute and relative pathname.
+13. Remove directory TRIAL.
+14. Create a directory TEST using absolute pathname.
+15. Using a single command change from current directory to home directory.
+16. Remove a directory using absolute pathname.
+17. Create files myfile and yourfile under Present Working Directory.
+18. Display the files myfile and yourfile.
+19. Append more lines in the myfile and yourfile files.
+20. How will you create a hidden file?.
+21. Copy myfile file to emp.
+22. Write the command to create alias name for a file.
+23. Move yourfile file to dept.
+24. Copy emp file and dept file to TRIAL directory
+25. if you compare a file with itself.
+26. Compare myfile file and emp file.
+27. Append two more lines in emp file existing in TRIAL directory.
+28. Compare employee file with emp file in TRIAL directory.
+29. Find the difference between the above file.
+30. Remove the files in the TRIAL directory.
+31. Can you remove a directory with files by using a single command.
+32. Is there any command available to get back a deleted file?
+33. Rename TRIAL as DATA.
+34. Copy DATA to another directory by name TRIAL.
+35. Create a file called dummy in TRIAL and link it to another file by name star.
+36. Link the dummy file in TRIAL to another file by name power in DATA.
+
+Lab 2
+1.
+
+Which command is used to print “Hello Welcome to shell Programming” ?
+
+2.
+
+Which command is used to get the value from the user ?
+
+3.
+
+Which command is used to make a variable as global ?
+
+4.
+
+Which command is used to perform numeric operation ?
+
+3.
+
+How to make use of command substitution ?
+
+Lab 3
+1.
+
+Write a menu- driven program for the following options
+
+•
+•
+•
+•
+2.
+
+List of files
+Processes of Users
+Today’s Date
+Quit out of Unix
+
+Write a shell program which accepts the name of a file from the standard input and then performs
+the following test on it.
+
+•
+•
+
+File Existence
+File Readable and Writable
+
+3.
+
+Write a shell program to perform a simulated cp command. Proceed this program using positional
+parameter and the usage will be on the form of copy <s.file> <target file> and ensure that
+parameters are properly used.
+
+4.
+
+Write a shell program to convert all lowercase letters in a file to uppercase letter.
+
+5.
+
+Write a shell program for file contains records ith each record containing name and city, name of
+state and name of country. How would you sort this file with country as the primary key and state
+the secondary sort key.
+
+
+Lab 4
+1.
+
+Login in multi-user mode.
+
+2.
+
+Identify the current run level.
+
+3.
+
+Identify the default run level of the system.
+
+4.
+
+Change the default run level to 2.
+
+5.
+
+Check the difference between the run level 3 and single user mode
+
+6.
+
+Create run control scripts and execute them at the time of system startup in the default run level.
+
+7.
+
+Write a script to execute at the time when the in system enter to run level 0.
+
+8.
+
+Change run level to start X windows at the time of bootup.
+
+9.
+
+Restart the system.
+
+10. Bring the system to single user mode for system maintenance.
+11. Shutt down the system without delay.
+
+Lab 5
+1.
+2.
+
+Login as root and create groups as dba with id 501 & stud with id 555
+Create the following list of users
+
+User name
+
+UID
+
+GID
+
+Working Shell
+
+Secondary
+
+Comments Group
+
+Mac1
+
+501
+
+501
+
+Bourne shell
+
+555
+
+Mac1 user
+
+Mac2
+
+502
+
+501
+
+C shell
+
+NULL
+
+Mac2user
+
+Mac3
+
+503
+
+501
+
+BASH Shell
+
+555
+
+Mac3 user
+
+User1
+
+504
+
+555
+
+Bourne shell
+
+NULL
+
+User1 user
+
+User2
+
+505
+
+555
+
+Bash Shell
+
+NULL
+
+User2 user
+
+Shut
+
+?????? ??????? ??????
+
+NULL
+Shutdown the system
+using the user id shut
+
+3.
+
+Examine the content of the /etc/passwd file.
+
+4.
+
+Examine the content of the /etc/shadow file. Name the text that is found in the second field for the
+users created.
+
+5.
+
+Set password for the users mac1, mac2, mac3 & shut.
+
+6.
+
+Select user2 from the list of users. Change the passwd aging information for user2 so that it matches
+the following information.
+Max inactive 2 days
+Expiry 4 days
+Now change the system date increase by 5 days
+
+7.
+
+Logout of login session. Attempt to log as user2. What happens?
+
+8.
+
+Change the shell for the user2 to Bourne shell.
+
+9.
+
+Delete user2 including his home directory and his comments.
+
+10. Lock the user1 with the help of a single command.
+
+
+Lab 6
+1.
+
+Identify the available memory in the system.
+
+2.
+
+Display the list of devices connected to your system including the physical names and its instance
+number.
+
+3.
+
+Identify the number of hard disks connected to the system.
+
+4.
+
+Format a floppy and create a UFS file system in the floppy.
+
+1.
+
+Create a new file system by using mkfs command.
+
+2.
+
+Create a directory called /kishore directory as the mount point for the file system that has been just
+created.
+
+3.
+
+Mount the new file system to the /kishore directory.
+
+4.
+
+Add a line to /etc/fstab to make the mount for /kishore and test what happens when the system is
+
+Lab 7
+
+booted.
+5.
+
+Reboot the system. Verify if /kishore is mounted or not.
+
+Lab 8
+1.
+
+Share a file system called /home/kishore permanently
+
+2.
+
+Check if the file system is shared or not.
+
+3.
+
+Mount the remote file system by using the mount command.
+
+4.
+
+Mount the remote file system permanently
+
+1.
+2.
+3.
+
+Create a swap file system by using touch and mkfile .
+Mount the swap file system by using swapon & swap commands.
+Delete the swap file system
+
+Lab 9
+
+Lab 10
+1.
+2.
+3.
+4.
+5.
+6.
+7.
+8.
+9.
+10.
+11.
+12.
+13.
+14.
+15.
+16.
+17.
+
+Login as a normal user
+Create file test
+Find the permissions of file test
+Change the ownership of the file to usr1
+Find the current umask setting
+Change the umask setting
+Create file test1
+Find out the difference
+Switch to Super User Account
+Change group of file test
+Change ownership and group of file test1 with a single command
+Change the ownership of all the files in user1’s home directory with a single command
+Create a file abc and turn the execute bit on
+Set setuid permission on the file abc
+Determine if the setuid permission is enabled on the file abc
+Create a directory testdir
+Set setgid permission on the testdir
+18.
+19.
+20.
+21.
+22.
+23.
+24.
+25.
+26.
+27.
+28.
+
+Logout and login as user1
+Create a file testfile in testdir
+Verify the ownership and the group of the testfile
+Switch to Superuser account
+Create a public directory dir1
+Set stickybit (save text attribute) on dir1
+Logout and login as a normal user user1
+Create a file userfile1 in dir1
+Login as a different user user2
+Try to edit or remove the file
+Temporarily disable user logins
+
+Lab 11
+1.
+
+Check whether the printer scheduler is running.
+
+2.
+
+Configure the printer in Linux by editing the file /etc/printcap.
+
+3.
+
+Send /kishore file to the printer.
+
+4.
+
+To ensure that request was recieved.
+
+5.
+
+Cancel the print job.
+
+Lab 12
+1.
+
+Create three sample directories with some files to use with the tar command.
+
+2.
+
+Use the tar command to backup all three directories into single tar file.
+
+3.
+
+Use the tar command to verify that the files are on the tape and in a single tar file.
+
+4.
+
+Use the tar command to backup the sample directories into four different files.
+
+5.
+
+Verify the number of tar files using the tar command.
+
+6.
+
+Backup a directory using cpio.
+
+7.
+
+Restore the files which are backuped in the floppy.
+
+8.
+
+Back up a floppy to a floppy using dd.
+
+9.
+
+Restore from floppy to home directory using dd.
+
+Lab 13
+1.
+
+Create a file under the user’s home directory in the name of quota.user(linux).
+
+2.
+
+Change the ownership of the file.
+
+3.
+
+Make an entry in usrquota in the /etc/fstab.
+
+4.
+
+Create a file under user home direcoty in the name of quotas. (Sun Solaris)
+
+5.
+
+Change the ownership of the file.
+
+6.
+
+Make an entry in rq in the /etc/vfstab.
+
+7.
+
+Turnon the quotas by using quotaon command.
+
+8.
+
+Assign the quota for user by using edquota command.
+
+9.
+
+Check the quota for the file system.
+
+10. Turn off the quota.
+
+Lab 14
+1.
+
+Login as root
+
+2.
+
+Deny a user user1 from using at command
+
+3.
+
+Display “WELCOME TO RADIANT “ at 11.30 AM on console
+
+4.
+
+Remove an at job
+
+5.
+
+Display the at jobs waiting to be executed
+
+6.
+
+Delete an at job
+
+7.
+
+Allow only an user user1 to use at command other than Superuser
+
+8.
+
+Remove a file at midnight using at command
+
+9.
+
+Using crontab execute a command at 6.30 AM everyday
+
+10. Delete a user crontab file
+11. Display a user crontab file
+12. Restrict a user user1 from using crontab
+13. Allow only user1, user2, user3 to use crontab
+
+Lab 15
+1.
+
+List the processes for the current shell.
+
+2.
+
+Display information about processes.
+
+3.
+
+Display the global priority of a process and find out the column that provides.
+
+4.
+
+Change the priority of a process with default arguments.
+
+5.
+
+Display Virtual Memory Statistics.
+
+6.
+
+Display System Event Information.
+
+7.
+
+Display Swapping Statistics.
+
+8.
+
+Check File Access statistics.
+
+9.
+
+Check Buffer Activity statistics.
+
+10. Check Disk Activity statistics.
+11. Check Inter process Communication statistics.
+12. Check Unused Memory in the server.
+13. Check Swap Activities.
+

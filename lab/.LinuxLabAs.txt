@@ -1,0 +1,615 @@
+Lab Solutions for UNIX Administration
+Lab 1
+1.
+
+(i) uname
+(ii) logname
+(iii) hostname
+2. who
+who am I
+3. (i) cal jan 2000
+(ii)cal feb 1999
+(iii)cal sep 7
+(iv)cal
+(v) date ‘+%d/%m/%y’
+4. date ‘+24Hour:%T 12Hour:W%1:%M;%S’
+5. date’+currentdate: %D %n TIME: %t’
+6. BANNER –W “good Morning”
+7. pwd
+8. mkdir sample
+9. cd sample
+mkdir Trial
+10. cd sample
+11. cd
+12. cd $home/Trial
+13. cd
+cd sample
+rmdir Trial
+14. mkdir./ sample/Trial
+15. cd/sample/Trial
+16. rmdir ./sample/Trial
+17. cat>myfile
+This is myfile
+^d
+cat >yourfile
+This is yourfile
+^d
+18. cat myfile
+cat yourfile
+19. cat >> myfile
+Add
+^d
+cat>>yourfile
+Append
+^d
+20. cat>.hide
+hidden
+^d
+21. copy myfile emp
+22. ln yourfile aliasname
+23. mv yourfile aliasname
+24. cp emp dept../ Trial
+25. if there is no difference no output
+26. cmp myfile emp
+27. cd/sample/Trial
+cat>>emp
+28. cmp employee emp
+29. diff employee emp
+30. rm *
+31. rm –r Trial
+32. undelete (SCO)
+33. rename Trial Data
+34. cp Data/same/Trial
+35. ln Trial star
+36. ln –s/sample/Trial/sample/Data/filename
+
+Lab 2
+1.
+2.
+3.
+4.
+5.
+
+echo “Hello welcome to shell programming”
+read
+export
+expr
+x=’date’
+echo$x
+
+Lab 3
+1.
+# vi menu
+echo “Enter the options between [1-4] to execute commands:”
+read choice
+case $choice in
+i. ls –1;;
+ii. ps;;
+iii. date;;
+iv. exit;;
+*) echo “choose option between 1-4”
+break;;
+esac
+#sh menu
+Enter the options between [1-4] to execute commands : 1
+Total 36
+drwxr-xr-x
+5 unix
+dba
+4096
+May 23 14:21 Desktop
+-rwxr-xr-x
+1 unix dba
+11972 May 23 15:54 a.out
+-rw-r-r1 unix
+dba
+36
+May 23 15:17 hai
+-rw-r-r1 unix
+dba
+189
+May 23 16:01 menu
+-rw-r-r1 unix
+dba
+107
+May 23 15;25 srini
+-rw-r-r1 unix
+dba
+108
+May 23 15:45 srini.c
+-rw-r-r1 unix
+dba
+107
+may 23 15:54 srinil.c
+2.
+# vi exist
+echo “Enter the filename:”
+read fname
+if [-f $fname –a –r $fname –a –w $fname ]
+then
+echo “$fname is Exist”
+echo “$fname is readable”
+echo “$fname is writable”
+else
+echo “$fname is not Exist “
+fi
+# sh exist
+Enter the filename : menu
+Menu is Exist
+Menu is Readable
+Menu is Writable
+3. #vi copy
+sfile =$1
+tfile =$2
+if
+[
+$#
+-eq
+2
+]
+then
+cp $sfile $tfile
+else
+echo “ USAGE: copy source-file target-file”
+Fi
+# sh coy new
+echo “Usage: copy source-file target-file
+# sh copy menu new
+To verify whether it is copied or not
+# cat new
+echo “Enter the options between [1-4] to execute commands:”
+read choice
+case $choice in
+i. ls -1;;
+ii. ps;;
+iii. date;;
+iv. exit;;
+v. echo “Choose options between 1-4”
+vi. break;;
+esac
+4.
+# vi conv
+echo “Enter the file name to convert:”
+read fname
+if [-f
+$fname ]
+then
+echo “File Exist”
+echo
+tr “[a-z]””[A-Z]” < $fname
+else
+echo “File not Exist”
+fi
+# sh abc
+File not Exist
+# sh new
+echo “Enter the options between [1-4] to execute commands:”
+read choice
+case $choice in
+i. LS –L;;
+ii. PS;;
+iii. DATE;;
+iv. EXIT;;
+*) ECHO “ CHOOSE OPTIONS BETWEEN 1-4 “
+ESAC
+5. # cat > database
+Murali:chennai;tamilnadu:India
+Sivam:wasington:Washington:usa
+Natty:gobi:tamilnadu:India
+# vi
+echo
+read
+echo
+read
+echo
+if
+then
+
+psort
+“Enter the primary field key to sort:[field number]”
+pkey
+“Enter the secondary field key ot sort: [field number]”
+skey
+“Enter the Filename”
+[ -f
+$fname ]
+echo “File Exist”
+cut –d “:” –f $pkey,$skey | sort
+
+else
+echo “File Does not Exist”
+fi
+# sh old
+File Does not Exist
+# sh psort
+2
+4
+# cat database
+chennai:india
+gobi: india
+washington:usa
+
+Lab 4
+1.
+2.
+3.
+4.
+
+Press Enter
+# runlevel
+# grep init default/etc/rc.d/inittab
+# vi/etc/rc.d/inittab
+then change the runlevel to S in the second field where you find the
+initdefault command in the third field
+5. Check the service started and file system mounted in the run level 3
+and in single user Mode
+For eg NFS service is not in single user mode while it is done in run
+level3
+6. #cd /etc/rc.d/rc3/d
+cat S1—abc
+sleep500
+This will execute at the time of system startup in the default
+runlevel3. When this script executes the sleep command keeps the
+system wait until 500 seconds and go for the next process.
+7. # cd /etc/rc.d/rc0.d
+cat K 10abc
+sleep 500
+This will execute at the time of system shutdown using init0
+8. # vi/etc/rc.d/inittab
+then change the runlevel to 5 in the second field, where you find the
+initdefault command in the third field. Ensure you have installed all
+components to start X windows
+9. # init 6 or shutdown –r now
+10. # init 1 or init S
+11. # shutdown –h now
+
+Lab 5
+1. # groupadd -g dba 501
+# groupadd -g stud 555
+2. useradd –u 501 –g 501 -c “mac1 user” –d /home/mac1-m –s /bin/sh –G 555
+mac1
+useradd –u 502 –g 501-c “mac2 user” –d/home/mac2 –m –s /bin/csh mac2
+useradd –u 503 -g 501 –c “mac3 user” –d/home/mac3 –m –s/bin/bash –G
+555 mac3
+useradd –u 504 –g 555 –c “user1 user” –d/home/user1 –m –s/bin/sh user1
+useradd –u 505 –g 555 –c “user2 user” –d/home/user2 –m –s/bin/bash
+user2
+useradd –u 0 –g 0 –c “user to shutdon the system” –d/shut –m –s/bin/sh
+–0 shut
+3. # vi/etc/passwd
+mac1
+/bin/sh
+mac2
+/bin/csh
+mac3
+/bin/bash
+There you can see the full pathnames of the shell for the new users
+created
+4. # vi/etc/shadow
+mac1:!!::
+mac2:!!::
+mac3:!!::
+user2:!!::
+This is because you we have not set password for the users mac1,mac2
+and mac3
+5. # passwd mac1
+# passwd mac2
+# passwd mac3
+setting password for these users
+6. # usermod –f 2 –e 04/19/01
+Modifying the users expired by next
+7. The user cannot able to login becaus5t his account is expired only
+administrator can make the user exist one again
+8. # usermod –s /bin/sh user2
+Modifying the user2 working shell environment form bash to sh
+9. # userdel –r user2
+Deleting the users along with his home directory and files
+10. # passwd –l mac3
+Locking the user temporally by root users and only root can unlock
+this user.
+
+Lab 6
+1.
+2.
+3.
+4.
+
+dmesg lgrep Memory
+dmesg
+cfdisk
+FdFormat/dev/Fd0H1440
+
+Lab 7
+1. Creating a new file system in Linux:
+# mkfs –t ext2 –c /dev/hda*
+2. # mkdir /kishore
+3. # mount /dev/hda* /kishore
+4. Adding entry in /etc/fstab
+/dev/device
+/dir/to/mount
+ftype parameters
+fs_passno
+Ex:
+/dev/hda2
+/kishore
+ext2
+rw
+0
+0
+5. Reboot your system. Verify that /kishore is mounted
+
+fs_freq
+
+Lab 8
+1. Sharing a file system in Linux
+# vi /etc/exports
+/home/kishore host1 (rw) host2 (ro) host3 (ro)
+Sharing a file system in Sun Solaris
+# vi /etc/dfs/dfstab
+share –F nfs –o rw: radiant1:radiant2 /home/kishore –d “only ofr
+Admin.pupils”
+2. Checking the file system is shared or not in Lunux
+# exportfs
+/home/kishore radiant1
+Checking the file system is shared or not in Sun Solaris
+# share
+/home /kishore ro
+radiant1
+3. Mounting the NFS file system
+#mount –t [file system type] –o [option] [hostname of NFS server :
+remote dir] [mountpoint]
+Example:
+# mount –t nfs –o rw radiant1 : /home /kishore /mnt
+mounting remote file system in Sun Solaris
+Mounting the NFS file system (Sun Solaris)
+# mount –F [file system type] –o [option] [hostname of NFS server :
+remote dir] [mountpoint]
+Example:
+#mount –F nfs –o rw radiant1 : /home/kishore/mnt
+4. mounting remote file system by using /etc/fstab in Linux
+#vi /etc/fstab
+# Remote mount
+/dev/device/dir/to/mount
+ftype parameters
+fs_freq_passno
+Example
+Lambent:/home/kishore/
+mntfsrw
+0
+0
+5. mounting remote file system by using /etc/vfstab in Sun Solaris
+# vi /etc/vfstab
+<device to mount> <device to fsck> <mount point> <fs type> <fsck
+pass> <mount at boot> <mount options>
+# remote mount
+lambent: /home/kishore
+/mnt
+nfs
+- yes -
+
+Lab 9
+1. Create a swap file by using mkswap (linux)
+Example to create a swap file:
+# mkswap [device] [block]
+# mkswap /dev/hda9 2000
+Create a swap file by using mkfile (Sun Solaris)
+Example to create a swap file:
+# mkfile nnn[k/b/m] filename
+# mkfile 24m/opt/abc
+2. Activate swap file:
+# swapon [device]
+# swapon /dev/hda9
+Activate the swap file
+# swap –a [filename]
+#swap –a /opt/kishore
+3. Example for deleting the swap file:
+# swapoff [device]
+# swapoff /dev/hda9
+Example for deleting the swap file:
+# swap –d /opt/kishore
+
+Lab 10
+2. cat >test
+3. ls –l test
+4. chown user1 /home/user1/test
+5. umask
+9. su
+10. chgrp <newgroup> /home/user1/test
+11. chown <new user>: <new group> file name
+12. chown –R <new user> directory name
+13. cat /abc
+14. chmod 777 /abc
+15. chmod 4777 /abc
+16. ls –l
+17. mkdir /testdir
+18. chmod 777/testdir
+19. chmod g+s /testdir
+20. cat > /testdir/testfile
+21. su
+22. mkdir/dir1
+23. chmod1777 /dir1
+24. create /etc/nologin ifle
+
+Lab 11
+1. Checking t/whether the printer schedular is running in Linux
+# lpc status {all 1 printer….}
+2. # vi /etc/printcap
+Local Printer
+Hp|Our printer:\
+:sd=/var/spool/lpd/hp:\
+:mx#0:\
+:sh:\
+:hp=/dev/lp0:\
+3. Sending a print request in Linux
+# lpq [-l] [-Pprinter] [job #….]
+Example to print a file
+# lpq –P hp /radiant/kishore
+4. Restarting the deamon in Linux
+# /etc/rc.d/init.d/lpd stop
+# /etc/rc.d/init.d/lpd start
+5. Cancel the print job in Linux
+Lprm [-Pprinter] [-l] [job #…..] [user…..]
+
+Lab 12
+1. mkdir dir1 dir2 dir3
+cd dir1 : touch file1
+cd dir2 : touch file 2
+cd dir3 : touch file 3
+2. tar cvf /dev/fd0 dir1 dir2 dir3
+3. tar tvf /dev/fd0
+4. tar cvf /dev/fdo dir1
+tar cvf /dev/fdo dir2
+tar cvf /dev/fdo dir3
+5. tar tvf /dev/fd0
+6. cd dir2
+ls –l |cpio –o c> /dev/fd0
+7. cpio –l c< /dev/fd0
+
+
+14
+
+Lab Solutions
+8. dd if = ./ of= /dev/fd0
+9. dd if = /dev /fd0of=/home
+
+Lab 13
+1. Configuring quotas for user in Linux
+# touch [filename]
+# touch /home/quota.user
+2. Change the permission
+# chmod 600 /home/quota.user
+3. Make an entry in /etc/fstab
+# vi /etc/fstab
+/dev/device /dir/to/mount ftype parameters
+/dev/hda6 home ext2 defaults,usrquota
+1
+
+fs_freq fs_paano
+1
+
+4. Configuring quotas for users in Sun Solaris
+Examples- Configuring quotas for user
+# touch [filename]
+# touch /export /home /quotas
+5. Change the permission
+# chmod 600 /export/home/quotas
+6. Make an entry in /etc/vfstab
+# vi /etc/vfstab
+deviceamount
+devicetofsck
+mountpoint fstype fsckpass
+/dev/dsk/c0td0s7 /dev rdsk/c0t3d0s7 /export/home ufs 2
+
+mountatboot
+yes
+
+mounoptions
+rq
+
+7. Turn on the quotas
+# quotaon [options] [filesystems]
+# quotaon –va /home
+/dev/hda6-quota turned on
+8. Assigning quota for a user
+# edquota –u kishore
+Quotas for user kishore
+/dev/hda6: blocks in use : 0, limits (soft=0, hard=0)
+inodes in use:0,limits (soft=0,hard=0)
+9. Checking quota for the file system
+# repquota [options] [file system]
+# repquota –va /home
+*** Report for user quotas on /dev/hda6(/home)
+Block limits
+File limits
+User
+used
+soft
+hard
+used
+soft hard
+Root
+10224
+0
+0
+1648
+0
+0
+Kishore 184
+1
+4
+46
+1
+5
+10. Turn off the quotas:
+To turn off quotas:
+# quotaoff [options] [ filesystem]
+# quotaoff –va /home
+/dev/hda6 –quota turned off
+
+Lab 14
+2. # vi /etc/at.deny
+……………… enter the login name of the user to be denied
+user1
+:wq!
+
+
+15
+
+3. # at 11:30
+at> echo WELCOME TO RADIANT>/dev/console
+4. get the jobs information
+#atq
+#atrm <at job number>
+5. #atq
+6. /var/spool/at
+7. atrm <at job number>
+8. at –d
+9. # vi /etc/at.allow
+………….. enter the login name………………
+user1
+wq!
+10. # at midnight
+at> rm <filename>
+wq!
+11. # crontab –e
+……………enter the values like this…………………
+3006 *** <command to be executed>
+:wq!
+12. # crontab –u <user name> -r
+13. # crontab –u <user name> -l
+/var/spool/cron/<user name>
+# vi /etc/cron.deny
+…………………..enter the username to be restricted
+user1
+:wq!
+# vi /etc/cron.allow
+…………………..enter the user names to be allowed
+user1
+user2
+user3
+:wq!
+
+Lab 15
+1.
+2.
+3.
+4.
+
+# ps
+# ps –ef
+# ps –ecl
+# sleep –500 &
+# ps –f –pid
+# /usr/bin/nice +4 (default four units)
+5. #VMSTAT
+6. #vmstat –s
+7. # vmstat –S
+8. # sar –a
+9. # sar –b
+10. # sar –d
+11. # sar –m
+12. # sar -r
+13. # sar -r
+
+
+
