@@ -21,3 +21,8 @@ then
 	echo "The content of file1 is input to cat command:"
 	cat<f1
 	sh temp.sh
+	cat < f1
+	sh temp.sh
+elif [ "$ch"=3 ]
+then
+	
