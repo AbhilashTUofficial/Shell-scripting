@@ -1,0 +1,40 @@
+Vim zero to hero
+--------------------------------------------------
+basics
+vim fileName : create a file and open in vim
+quit from vim : ':q'
+save and quit from vim : ':wq'
+discard changes and quit from vim : ':q!'
+Write the file : ':w'
+
+
+Normal mode:
+  moves : h -> left
+	  l -> right
+	  j -> down
+	  k -> up
+	  x -> delete the charecter
+    r -> replace the charecter
+	  dd -> delete the line
+	  u -> undo
+      Add line numbers : ':set number'
+	  Jumb to the line with ': number'
+Insert mode:	
+  In insert mode use the arrow keys to 
+  navigate.
+  'i' to enter into insert mode
+  'esc' to return into normal mode
+  'shift+i' to enter into insert mode and 
+  goto the beginning of the line.
+  'shift+a' to enter into insert mode and
+  goto the the end of the line.
+  'a' to enter into insert mode after the current charecter.
+  
+
+
+Mode change:
+  i -> insert mode
+  : -> command mode
+  v -> visual mode
+
+
