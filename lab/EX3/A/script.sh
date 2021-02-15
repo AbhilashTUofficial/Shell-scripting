@@ -25,4 +25,22 @@ then
 	sh temp.sh
 elif [ "$ch"=3 ]
 then
-	
+	echo "Output redirection"
+	echo "******************"
+	echo "The screen output is redirected to f1"
+	echo "The content of f1 is"
+	cat f2 >> f1
+	cat f1
+	sh temp.sh
+elif [ "$ch" = 4 ]
+then
+	echo "Tee chammand"
+	echo "******************"
+	echo "Redirect standard output of ls command to another file temp1"
+	ls | tee temp1
+	echo "The content of temp is"
+	cat temp1
+else
+	echo "Wrong choice"
+fi
+
